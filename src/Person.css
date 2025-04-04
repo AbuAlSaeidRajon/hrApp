@@ -1,8 +1,26 @@
 .person {
-    border: 1px solid #ccc;
+    background-color: #282c34; /* Dark background */
+    color: #FFD700; /* Gold text */
+    border: 2px solid #FFD700; /* Gold border */
     padding: 20px;
     margin: 20px;
     text-align: left;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial', sans-serif;
+    transition: transform 0.2s;
+  }
+  
+  .person:hover {
+    transform: scale(1.05);
+  }
+  
+  .person h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .person p {
+    font-size: 1em;
+    margin: 5px 0;
   }

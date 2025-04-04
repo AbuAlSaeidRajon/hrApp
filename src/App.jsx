@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
-import Person from './Person';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+import Person from './Person.jsx';
 import './App.css';
 
 function App() {
@@ -10,12 +10,12 @@ function App() {
       <Header />
       <main>
         <Person 
-          name="John Doe"
-          title="Software Engineer"
-          salary="$100,000"
+          name="Md Saeid"
+          title="Web Developer"
+          salary="€5000"
           phone="123-456-7890"
-          email="john.doe@example.com"
-          animal="Dog"
+          email="khanrajon5@gmail.com"
+          animal="Cat"
         />
       </main>
       <Footer />

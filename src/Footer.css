@@ -1,9 +1,13 @@
 .footer {
-    background-color: #282c34;
+    background-color: #663399; /* Purple background */
     padding: 10px;
-    color: white;
+    color: #FFD700; /* Gold text */
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    border-top: 3px solid #FFD700; /* Gold border */
   }

@@ -1,9 +1,9 @@
 import React from 'react';
-import './Person.css';
+import './Box.css';
 
-const Person = ({ name, title, salary, phone, email, animal }) => {
+const Box = ({ name, title, salary, phone, email, animal }) => {
   return (
-    <div className="person">
+    <div className="box">
       <h2>{name}</h2>
       <p>Title: {title}</p>
       <p>Salary: {salary}</p>
@@ -14,4 +14,4 @@ const Person = ({ name, title, salary, phone, email, animal }) => {
   );
 };
 
-export default Person;
+export default Box;

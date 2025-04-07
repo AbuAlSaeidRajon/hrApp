@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './Header.jsx';
-import Footer from './Footer.jsx';
-import Person from './Person.jsx';
+import Header from './Header/Header.jsx';
+import Footer from './Footer/Footer.jsx';
+import Box from './Box /Box.jsx';
 import './App.css';
 
 function App() {
@@ -9,13 +9,13 @@ function App() {
     <div className="App">
       <Header />
       <main>
-        <Person 
-          name="Md Saeid"
-          title="Web Developer"
-          salary="€5000"
+        <Box 
+          name="John Doe"
+          title="Software Engineer"
+          salary="$100,000"
           phone="123-456-7890"
-          email="khanrajon5@gmail.com"
-          animal="Cat"
+          email="john.doe@example.com"
+          animal="Dog"
         />
       </main>
       <Footer />

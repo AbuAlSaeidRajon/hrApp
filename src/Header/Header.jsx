@@ -1,10 +1,17 @@
-import React from 'react';
-import './Header.css';
-
-const Header = () => {
+import "./Header.css";
+const Header = (props) => {
   return (
-    <header className="header">
-      <h1>hrApp</h1>
+    <header>
+      <div className="logo">
+        <h2>{props.name}</h2>
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Persons</li>
+          <li>About</li>
+        </ul>
+      </nav>
     </header>
   );
 };

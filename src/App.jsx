@@ -1,26 +1,33 @@
-import React from 'react';
-import Header from './Header/Header.jsx';
-import Footer from './Footer/Footer.jsx';
-import Box from './Box/Box.jsx';
-import './App.css';
+import "./App.css";
+import Box from "./Box/Box";
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
+import { persons } from "./personsData";
+import BookList from './BookList/BookList';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Header />
+    <div>
+      <Header name="Md Saeid" />
       <main>
-        <Box 
-          name="John Doe"
-          title="Software Engineer"
-          salary="$100,000"
-          phone="123-456-7890"
-          email="john.doe@example.com"
-          animal="Dog"
-        />
+        <h1>REACT DEMO APP</h1>
+        <div className="boxes">
+          {persons.map((person) => (
+            <Box
+              key={person.id}
+              id={person.id}
+              fullName={person.name}
+              age={person.age}
+              title={person.title}
+              myanimal={person.myanimal}
+            />
+          ))}
+        </div>
+        <BookList />
       </main>
-      <Footer />
+      <Footer year={2025} />
     </div>
   );
-}
+};
 
 export default App;

@@ -1,15 +1,12 @@
-import React from 'react';
-import './Box.css';
-
-const Box = ({ name, title, salary, phone, email, animal }) => {
+import "./Box.css";
+const Box = (props) => {
   return (
     <div className="box">
-      <h2>{name}</h2>
-      <p>Title: {title}</p>
-      <p>Salary: {salary}</p>
-      <p>Phone: {phone}</p>
-      <p>Email: {email}</p>
-      <p>Favorite Animal: {animal}</p>
+      <p>{props.fullName}</p>
+      <p>{props.title}</p>
+      <p>{props.myAnimal}</p>
+      <p>{props.age}</p>
+      <p>ID: {props.id}</p>
     </div>
   );
 };

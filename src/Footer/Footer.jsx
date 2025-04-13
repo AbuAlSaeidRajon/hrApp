@@ -2,7 +2,7 @@ import "./Footer.css";
 const Footer = (props) => {
   return (
     <footer>
-      <p>Copyright &copy; Margit Tennosaar {props.year}</p>
+      <p>Copyright &copy; Rajon Al Saeid {props.year}</p>
     </footer>
   );
 };
